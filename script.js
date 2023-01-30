@@ -3,7 +3,7 @@
 let userName = prompt(
     "Bienvenido a Gimnasio The Box.\nPor favor ingrese su nombre:"
 );
-alert(`Hola ${userName}, a continuacion le ofreceremos distintas opciones`);
+alert(`Hola ${userName} a continuacion le ofreceremos distintas opciones`);
 
 // simulador de opciones
 
@@ -20,7 +20,7 @@ while (planGim != "opcion a" && planGim != "opcion b" && planGim != "opcion c" &
 } if (planGim == "opcion c"){
     alert(`${userName} seleccionaste el plan de free pass para entrenar todos los dias. \nEl arancel es de $6.400`)
 } else if (planGim == "opcion d"){
-    alert(`${userName} Gracias por ingresar a The Box`)
+    alert(`${userName} Gracias por ingresar a The Box.`)
 } 
 
 // agregar remera para entrenar
@@ -38,7 +38,7 @@ while (agregarProducto != "si" && agregarProducto != "no"){
     } let opcion = prompt ("Por favor ingrese el valor de su arancel elegido");
     sumar(opcion,remera)
     alert(`${userName} El total de su arancel es de: \n`  + (parseFloat (opcion) + parseFloat(remera)));
-    alert(`${userName} te esperamos en The Box`)
+    alert(`${userName} te esperamos en The Box.`)
 }else if (agregarProducto == "no"){
-    alert("Gracias por visitarnos")
+    alert("Gracias por visitarnos.")
 }
