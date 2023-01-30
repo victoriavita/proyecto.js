@@ -1,9 +1,9 @@
 // saludo de bienvenida
 
 let userName = prompt(
-    "Bienvenido Gimnasio The Box.\nPor favor ingrese su nombre:"
+    "Bienvenido a Gimnasio The Box.\nPor favor ingrese su nombre:"
 );
-alert(`Hola ${userName}, a continuacion le ofreceremos distintas opciones!`);
+alert(`Hola ${userName}, a continuacion le ofreceremos distintas opciones`);
 
 // simulador de opciones
 
