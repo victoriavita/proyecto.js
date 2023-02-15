@@ -81,7 +81,7 @@ console.log(arrayOpcionRemera);
 
 
 const totalArancel = arrayOpcion.reduce((acc, e)=> acc + e.arancel, 0);
-console.log(totalArancel);
+console.log(`total ${totalArancel}`);
 
 
 
