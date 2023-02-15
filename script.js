@@ -8,18 +8,6 @@ alert(`Hola ${userName} a continuacion le ofreceremos distintas opciones`);
 // simulador de opciones
  // funcion constructora objeto
 
-class Opcion{
-    constructor (cantidad, arancel){
-        this.cantidad= cantidad;
-        this.arancel= arancel;
-    }
-}
-const opcionUno = new Opcion ("dos", 4600)
-const opcionDos = new Opcion ("tres", 5100)
-const opcionTres = new Opcion ("free pass", 6400)
-
-const arrayOpcion = [opcionUno, opcionDos, opcionTres];
-console.log(arrayOpcion);
 
 let planGim = prompt("Seleccione una opción: \n opcion a: 2 veces por semana \n opcion b: 3 veces por semana \n opcion c: free pass \n opcion d: no me interesa ninguna opcion")
 
@@ -56,6 +44,20 @@ while (agregarProducto != "si" && agregarProducto != "no"){
     alert("Gracias por visitarnos.")
 }
 
+class Opcion{
+    constructor (cantidad, arancel){
+        this.cantidad= cantidad;
+        this.arancel= arancel;
+    }
+}
+const opcionUno = new Opcion ("dos", 4600)
+const opcionDos = new Opcion ("tres", 5100)
+const opcionTres = new Opcion ("free pass", 6400)
+
+const arrayOpcion = [opcionUno, opcionDos, opcionTres];
+console.log(arrayOpcion);
+
+
 agregarProducto = {
     producto: "remera",
     color: "negro",
@@ -79,7 +81,7 @@ console.log(arrayOpcionRemera);
 
 
 const totalArancel = arrayOpcion.reduce((acc, e)=> acc + e.arancel, 0);
-console.log(`El total es de: ${totalArancel}`)
+console.log(totalArancel);
 
 
 
