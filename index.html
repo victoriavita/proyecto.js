@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+        crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./img/logo-favicon.png">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Gimnasio THE BOX</title>
-</head>
-<body>
-
+    </head>
+    <body>
     <!-- inicio de nav bar -->
-    <nav class="navbar navbar-expand-lg bg-danger">
+    <nav class="navbar navbar-expand-lg bg-secondary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html"
+        <a class="navbar-brand" href="./index.html"
             ><img
-              class="logo__navbar"
-              src="./img/logo-gimnasio-sinfondo.png"
-              alt="logo"
-          /></a>
-          <button
+            class="logo__navbar"
+            src="./img/logo-gim-sinfondo.png"
+            alt="logo"
+        /></a>
+        <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
@@ -31,73 +32,55 @@
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
-          >
+        >
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-3 me-auto mb-2 mb-lg-0 m-lg-auto">
-              <li class="nav-item">
+            <li class="nav-item">
                 <a class="nav-link" href="./index.html">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./nosotros.html">NOSOTROS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./planes.html">PLANES</a>
-              </li>
-              <li class="nav-item">
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="./contacto.html">CONTACTO</a>
-              </li>
+            </li>
             </ul>
-          </div>
         </div>
-      </nav>
-      <!-- fin de nav bar -->
+        </div>
+    </nav>
+    <!-- fin de nav bar -->
+    <!-- inicio de parallax -->
+    <main class="main__principal"> 
+        <div class="main__principal__wrapper">
+            <h1 class="main__title">TODO LOGRO EMPIEZA con la DECISIÓN de INTENTARLO</h1>
+        </div>
+    </main>
 
+    <!-- fin de parallax -->
 
-      <!-- comienzo de seleccion de distintos planes -->
-      <section>
-        <div>
-        <h1 id="tituloPlan">ELEGÍ TU PLAN Y EMPEZÁ A ENTRENAR:</h1>
-        </div>
-        <div id="carrito">
-        <div>
-            <h2 id="plan">Opcion 1:</h2>
-            <p>2 veces por semana $4.600</p>
-            <p>Clases de 1 hora</p>
-            <p>Sabados Box libre</p>
-            <button id="btnClickOp1" onclick="agregarProducto(`producto 1` , 4600)">SELECCIONAR PLAN</button>
-        </div>
-        <div>
-            <h2>Opcion 2:</h2>
-            <p>3 veces por semana $5.100</p>
-            <p>Clases de 1 hora</p>
-            <p>Sabados Box libre</p>
-            <button id="btnClickOp2" onclick="agregarProducto(`producto 2` , 5100)">SELECCIONAR PLAN</button>
-        </div>
-        <div>
-            <h2>Opcion FREE PASS:</h2>
-            <p>Todos los dias $6.400</p>
-            <p>Clases de 1 hora</p>
-            <p>Sabados Box libre</p>
-            <button id="btnClickOp3" onclick="agregarProducto(`producto 3` , 6400)">SELECCIONAR PLAN</button>
-        </div>
-        </div>
-        <div>
-            <h3>Su monto final es de : </h3>
-        </div>
-        <div id="totalPlan">
+    <!-- inicio de seleccion de planes -->
+
+    <h2 class="title__seleccion bg-secondary">SELECCIÓN DE PLANES</h2>
+    <section class="planes__row" id="cardPlan">
+        
+    </section>
+    <!-- fin de seleccion de planes -->
+
+    <!-- inicio de footer -->
+    <footer class="footer bg-secondary">
+        <div id="divUbicacion">
             
         </div>
-    </section>
 
-    <!-- fin de seleccion de planes -->
-      <script src="./carrito.js"></script>
+    </footer>
+    <!-- fin de footer -->
 
-      <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./script.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"
     ></script>
-</body>
+    </body>
 </html>
